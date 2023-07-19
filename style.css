@@ -1,0 +1,217 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    margin-top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    background: url('./images/bg-pattern-top-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Heading and Rating Styling */
+.header {
+    width: 30%;
+}
+
+.heading {
+    font-size: 400%;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+
+}
+
+.paragraph {
+    margin-top: 20px;
+    color: hsl(303, 10%, 53%);
+    font-size: 130%;
+}
+
+.main {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.rating {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rating-card:nth-child(2) {
+    margin-left: 30px;
+}
+
+.rating-card:nth-child(3) {
+    margin-left: 60px;
+}
+
+.rating-card {
+    background-color: hsl(300, 50%, 96%);
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    font-weight: 700;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 30px;
+    align-items: center;
+    gap: 19px;
+    color: hsl(300, 43%, 22%);
+    box-sizing: border-box;
+}
+
+.star-icon {
+    padding: 2px;
+}
+
+/* Testimonials Styling */
+
+.testimonials {
+    margin-top: 50px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('./images/bg-pattern-bottom-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.user-stories {
+    width: 350px;
+    height: 270px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.user-stories:nth-child(2) {
+    margin-top: 30px;
+}
+
+.user-stories:nth-child(3) {
+    margin-top: 60px;
+}
+
+.user-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.user-info .user-picture {
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.profile-info .user-name {
+    color: hsl(300, 24%, 96%);
+}
+
+.profile-info .buyer {
+    margin-top: 6px;
+    font-weight: 500;
+    color: hsl(333, 80%, 67%);
+}
+
+.user-review {
+    color: hsl(300, 24%, 96%);
+    font-weight: 500;
+    margin-top: 25px;
+    padding: 30px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.attribution{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-weight: 500;
+    color: hsl(300, 43%, 22%);
+}
+.attribution > a{
+    color: hsl(333, 80%, 67%);
+}
+/* Media Queries */
+@media screen and (max-width:768px) {
+    .container{
+        background: url('./images/bg-pattern-top-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .testimonials{
+        background: url('./images/bg-pattern-bottom-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .rating {
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+        text-align: center;
+    }
+    .header {
+        width: 100%;
+    }
+
+    .rating-card {
+        width: 90%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-wrap: nowrap;
+        height: 80px;
+    }
+
+    .rating-card:nth-child(2) {
+        margin-left: 5%
+    }
+
+    .rating-card:nth-child(3) {
+        margin-left: 5%
+    }
+
+    .user-stories:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .user-stories:nth-child(3) {
+        margin-top: 20px;
+    }
+    .user-stories {
+        height: auto;
+    }
+}
